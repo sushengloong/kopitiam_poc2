@@ -19,13 +19,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="brand" href="#"><%= app_display_name %></a>
+        <%= link_to app_display_name, root_path, class: "brand" %>
         <div class="nav-collapse collapse">
           <p class="navbar-text pull-right">
           Logged in as <a href="#" class="navbar-link">Username</a>
           </p>
           <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><%= link_to "Home", root_path %></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
